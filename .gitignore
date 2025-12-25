@@ -67,6 +67,7 @@ compile_latex.sh
 Thumbs.db
 
 # Spotify cache
+.cache
 .cache-*
 
 # Analysis outputs (keep structure but not large data)
