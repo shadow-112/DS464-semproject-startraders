@@ -242,7 +242,7 @@ This project is for educational and research purposes.
 
 ## 👤 Author
 
-Data Analysis Project - Spotify Trending Music Analysis
+Saad Shafqat - 2022517
 
 ---
 
