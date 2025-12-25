@@ -2,7 +2,7 @@
 
 ## 📊 Project Overview
 
-This project performs comprehensive data analysis on Spotify trending music data, collecting tracks from multiple playlists and markets worldwide. The analysis includes data collection, cleaning, exploratory data analysis (EDA), statistical analysis, and advanced analytics including clustering and PCA.
+This project analyzes Spotify trending music data collected from multiple playlists and markets worldwide. We collected over 3,600 tracks from 50+ playlists across 11+ countries, performed comprehensive data cleaning and preprocessing, conducted exploratory data analysis, statistical hypothesis testing, and applied machine learning techniques including K-means clustering and PCA to uncover patterns in global music trends.
 
 ## 🎯 Key Features
 
@@ -50,49 +50,24 @@ This will run the complete analysis pipeline:
 3. Statistical analysis
 4. Insight generation
 
-### Generate Report
-
-```bash
-python generate_report.py
-```
-
-This generates a comprehensive markdown report (`DATA_ANALYSIS_REPORT.md`) with all findings and visualizations.
-
-### IEEE LaTeX Report
-
-The project includes an IEEE format LaTeX report (`IEEE_Report.tex`) ready for academic submission.
-
-**Compile the LaTeX report:**
-```bash
-./compile_latex.sh
-```
-
-Or manually:
-```bash
-pdflatex IEEE_Report.tex
-pdflatex IEEE_Report.tex  # Second pass for references
-```
-
-**Note:** Requires a LaTeX distribution (TeX Live, MacTeX, or MiKTeX).
+The analysis automatically generates visualizations and saves them to the `analysis_output/` directory. The comprehensive markdown report (`DATA_ANALYSIS_REPORT.md`) is included in this repository.
 
 ## 📁 Project Structure
 
 ```
 .
-├── collect_spotify_trending.py    # Data collection script
+├── collect_spotify_trending.py    # Data collection from Spotify API
 ├── data_analysis.py               # Main analysis pipeline
-├── generate_report.py             # Report generation script
-├── requirements.txt               # Python dependencies
-├── README.md                      # This file
-├── DATA_ANALYSIS_REPORT.md        # Comprehensive markdown report
-├── IEEE_Report.tex                # IEEE format LaTeX report
-├── compile_latex.sh              # LaTeX compilation script
-├── .gitignore                     # Git ignore file
-├── analysis_output/               # Analysis results
-│   ├── basic_statistics.csv      # Descriptive statistics
-│   ├── insights.txt              # Text summary
-│   └── *.png                     # Visualization files (10 figures)
-└── [CSV files excluded - can be regenerated]
+├── requirements.txt                # Python dependencies
+├── README.md                      # Project documentation
+├── DATA_ANALYSIS_REPORT.md        # Comprehensive analysis report
+├── DBA_project_2022517.pdf        # Final project report (PDF)
+├── analysis_output/                # Analysis results
+│   ├── processed_data.csv         # Cleaned dataset
+│   ├── basic_statistics.csv       # Summary statistics
+│   ├── insights.txt               # Key insights
+│   └── *.png                      # Visualization files (11 figures)
+└── [Raw CSV files excluded - can be regenerated]
 ```
 
 ## 📊 Analysis Outputs
@@ -113,10 +88,9 @@ All analysis outputs are saved in the `analysis_output/` directory:
 - `audio_features_boxplot.png` - Box plots of audio features
 
 ### Data Files
-- `processed_data.csv` - Cleaned and processed dataset with engineered features
+- `processed_data.csv` - Cleaned and processed dataset with engineered features (2,863 unique tracks)
 - `basic_statistics.csv` - Descriptive statistics for all numeric features
-- `insights.json` - Structured insights in JSON format
-- `insights.txt` - Human-readable insights summary
+- `insights.txt` - Summary of key insights from the analysis
 
 ## 🔑 Key Findings
 
@@ -196,27 +170,20 @@ export SPOTIFY_CLIENT_SECRET="your_client_secret"
 
 ## 📄 Reports
 
-The project includes two comprehensive reports:
+The project includes comprehensive documentation:
 
-### 1. Markdown Report (`DATA_ANALYSIS_REPORT.md`)
+### Markdown Report (`DATA_ANALYSIS_REPORT.md`)
+Complete analysis report with:
 - Executive Summary
-- Methodology
-- Data Collection Details
-- Data Cleaning Process
-- Exploratory Data Analysis
-- Statistical Analysis
-- Key Insights & Findings
-- Visualizations
-- Conclusions & Recommendations
+- Methodology and data collection process
+- Data cleaning and preprocessing steps
+- Exploratory Data Analysis results
+- Statistical analysis findings
+- Key insights and visualizations
+- Conclusions and recommendations
 
-### 2. IEEE LaTeX Report (`IEEE_Report.tex`)
-- Academic format (IEEE conference paper style)
-- Two-column layout
-- 10 figures properly referenced
-- 2 statistical tables
-- Complete methodology and results sections
-- Ready for academic submission
-- Compile to PDF using `./compile_latex.sh`
+### Final Project Report (`DBA_project_2022517.pdf`)
+The final project report in PDF format, ready for submission.
 
 ## 🔗 GitHub Repository
 
@@ -240,9 +207,11 @@ This is an academic/research project. For questions or contributions, please ref
 
 This project is for educational and research purposes.
 
-## 👤 Author
+## 👤 Authors
 
-Data Analysis Project - Spotify Trending Music Analysis
+Star Traders  
+GIKI  
+2022517, 2022605, 2022062
 
 ---
 
